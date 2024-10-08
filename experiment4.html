@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body bgcolor="teal" >
+<h2 align="center">Student Registration Form</h2>
+    
+    <form action="/submit" method="POST">
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" required><br><br>
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+        
+        <label for="dob">Password</label>
+        <input type="password" id="pwd" name="pwd" required><br><br>
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" required> Male<br>
+        <input type="radio" id="female" name="gender" value="Female" required> Female<br>
+        <input type="radio" id="other" name="gender" value="Other" required> Other<br><br><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <br><label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" cols="50"></textarea><br><br>
+
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+            <option value="">Select a course</option>
+            <option value="mca">MCA</option>
+            <option value="bca">BCA</option>
+            <option value="mba">MBA</option>
+            <option value="bba">BBA</option>
+        </select><br><br>
+        <h2>Select languages you know</h2>
+        <input type="checkbox" id="english" name="lang" value="english">
+        <label for="english">English</label><br>
+        <input type="checkbox" id="spanish" name="lang" value="spanish">
+        <label for="spanish">Spanish</label><br>
+        <input type="checkbox" id="french" name="lang" value="french">
+        <label for="french">French</label><br>
+        <input type="checkbox" id="hindi" name="lang" value="hindi">
+        <label for="hindi">Hindi</label><br><br><br>
+        <label for="year">Year of Study:</label><br>
+        <select id="year" name="year" required>
+            <option value="">Select a year</option>
+            <option value="1st">1st Year</option>
+            <option value="2nd">2nd Year</option>
+            <option value="3rd">3rd Year</option>
+        </select><br><br>
+
+        <input type="submit" value="submit">
+        <input type="submit" value="reset">
+    </form>
+
+</body>
+</html>
