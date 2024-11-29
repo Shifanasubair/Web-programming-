@@ -29,8 +29,7 @@
 
         function createCalendar(elem) {
             const year = document.getElementById("year").value;
-            let calendarHTML = `<h2>YEAR: ${year}</h2><br>`;  // Display the year at the top
-
+            let calendarHTML = `<h2>YEAR: ${year}</h2><br>`; 
             for (let mon = 0; mon < 12; mon++) {
                 let d = new Date(year, mon, 1); 
                 calendarHTML += '<strong>' + months[mon] + '</strong><br>';
