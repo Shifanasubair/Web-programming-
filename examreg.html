@@ -1,0 +1,148 @@
+<html>
+<head>
+<script>
+function exam() {
+  var m = 0;
+ 
+  if (document.examForm.one.value == "b tag") {
+    m = m + 1;
+  }
+
+  if (document.examForm.two.value == "6") {
+    m = m + 1;
+  }
+
+  if (document.examForm.three.value == "br tag") {
+    m = m + 1;
+  }
+
+  if (document.examForm.four.value == "u tag") {
+    m = m + 1;
+  }
+
+  if (document.examForm.five.value == "It is used to create links to other pages or resources.") {
+    m = m + 1;
+  }
+
+  if (document.examForm.six.value == "nested list") {
+    m = m + 1;
+  }
+
+  if (document.examForm.seven.value == "tr tag") {
+    m = m + 1;
+  }
+
+  if (document.examForm.eight.value == "ol tag") {
+    m = m + 1;
+  }
+
+  if (document.examForm.nine.value == "td tag") {
+    m = m + 1;
+  }
+
+  if (document.examForm.ten.value == "select tag") {
+    m = m + 1;
+  }
+
+  alert("Thank You for taking the online exam! \nYour score is: " + m + " out of 10");
+  return false;
+}
+</script>
+</head>
+<body bgcolor="oilblue">
+<form name="examForm" onsubmit="return exam()" method="get">
+<h2><center><u>TEST</u></center></h2>
+Enter your name: <input type="text" name="nm"><br><br>
+Enter your stream: <input type="text" name="st"><br><br>
+
+<p>
+1) Which tag is used for making any text bold?<br>
+ <input type="radio" name="one" value="p tag"> p tag<br>
+ <input type="radio" name="one" value="i tag"> i tag<br>
+ <input type="radio" name="one" value="b tag"> b tag<br>
+ <input type="radio" name="one" value="h tag"> h tag<br>
+</p>
+
+<p>
+2) How many heading tags are there in HTML?<br>
+ <input type="radio" name="two" value="2"> 2<br>
+ <input type="radio" name="two" value="3"> 3<br>
+ <input type="radio" name="two" value="5"> 5<br>
+ <input type="radio" name="two" value="6"> 6<br>
+</p>
+
+<p>
+3) Choose a tag with no closing tag<br>
+ <input type="radio" name="three" value="b tag"> b tag<br>
+ <input type="radio" name="three" value="i tag"> i tag<br>
+ <input type="radio" name="three" value="br tag"> br tag<br>
+ <input type="radio" name="three" value="h1"> h1 tag<br>
+</p>
+
+<p>
+4) Which tag is used to underline a text?<br>
+ <input type="radio" name="four" value="p tag"> p tag<br>
+ <input type="radio" name="four" value="i tag"> i tag<br>
+ <input type="radio" name="four" value="b tag"> b tag<br>
+ <input type="radio" name="four" value="u tag"> u tag<br>
+</p>
+
+<p>
+5) What does the anchor tag do?<br>
+ <input type="radio" name="five" value="It is used to create links to other pages or resources."> It is used to create links to other pages or resources.<br>
+ <input type="radio" name="five" value="It is used to add images to the webpage."> It is used to add images to the webpage.<br>
+ <input type="radio" name="five" value="It is used to display text on the webpage."> It is used to display text on the webpage.<br>
+ <input type="radio" name="five" value="It defines an area for embedding a video."> It defines an area for embedding a video.<br>
+</p>
+
+<p>
+6) Which is a list inside a list called as?<br>
+ <input type="radio" name="six" value="definition list"> definition list<br>
+ <input type="radio" name="six" value="unordered list"> unordered list<br>
+ <input type="radio" name="six" value="nested list"> nested list<br>
+ <input type="radio" name="six" value="ordered list"> ordered list<br>
+</p>
+
+<p>
+7) Which HTML tag is used to define a table row?<br>
+ <input type="radio" name="seven" value="td tag"> td tag<br>
+ <input type="radio" name="seven" value="th tag"> th tag<br>
+ <input type="radio" name="seven" value="table tag"> table tag<br>
+ <input type="radio" name="seven" value="tr tag"> tr tag<br>
+</p>
+
+<p>
+8) Which tag is used to display a list of items in an ordered way (1, 2, 3)?<br>
+ <input type="radio" name="eight" value="ol tag"> ol tag<br>
+ <input type="radio" name="eight" value="ul tag"> ul tag<br>
+ <input type="radio" name="eight" value="dl tag"> dl tag<br>
+ <input type="radio" name="eight" value="li tag"> li tag<br>
+</p>
+
+<p>
+9) Which tag is used to create a table cell in HTML?<br>
+ <input type="radio" name="nine" value="td tag"> td tag<br>
+ <input type="radio" name="nine" value="th tag"> th tag<br>
+ <input type="radio" name="nine" value="table tag"> table tag<br>
+ <input type="radio" name="nine" value="tr tag"> tr tag<br>
+</p>
+
+<p>
+10) Which tag is used to create a dropdown list in HTML?<br>
+ <input type="radio" name="ten" value="select tag"> select tag<br>
+ <input type="radio" name="ten" value="option tag"> option tag<br>
+ <input type="radio" name="ten" value="input tag"> input tag<br>
+ <input type="radio" name="ten" value="list tag"> list tag<br>
+</p>
+
+<p>
+<center>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset"/><br>
+</center>
+</p>
+
+</form>
+</body>
+</html>
+
